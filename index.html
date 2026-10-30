@@ -278,7 +278,7 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.01em; }
     <section id="top" class="hero container">
       <p class="eyebrow reveal"><span class="dot"></span> Disponibile per nuovi progetti</p>
       <h1 class="reveal">Ciao, sono <span class="grad">Pappo</span>.</h1>
-      <p class="lead reveal">Creo programmi e piccoli esperimenti digitali: dai launcher per Minecraft a globi interattivi per tenere traccia dei miei viaggi.</p>
+      <p class="lead reveal">Creo programmi e piccoli esperimenti digitali: dai launcher per Minecraft ai globi interattivi, fino a un cursore che si muove con le mani.</p>
       <div class="hero-actions reveal">
         <a class="btn btn-primary" href="#progetti">Vedi i progetti</a>
         <a class="btn btn-ghost" href="#contatti">Contattami</a>
@@ -434,6 +434,46 @@ const PROGETTI = [
     ],
     tecnologie: ["HTML", "JavaScript", "3D"],
     pulsanti: [{ testo: "Provalo", link: "globo.html", principale: true }],
+  },
+  {
+    titolo: "HandGesture",
+    colore: "#ff6bb5",
+    // Illustrazione al posto dello screenshot: per usare uno screenshot vero metti qui "img/handgesture.png"
+    immagine: "data:image/svg+xml," + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+      <defs><radialGradient id="g" cx="50%" cy="45%" r="60%"><stop offset="0" stop-color="#2a1630"/><stop offset="1" stop-color="#0d0d14"/></radialGradient></defs>
+      <rect width="800" height="500" fill="url(#g)"/>
+      <g fill="none" stroke="#ff6bb5" stroke-width="4" stroke-linecap="round" opacity=".55">
+        <path d="M60 110V60h50M690 60h50v50M740 390v50h-50M110 440H60v-50"/>
+      </g>
+      <circle cx="92" cy="92" r="7" fill="#ff4d4d"/>
+      <text x="108" y="99" font-family="Arial, sans-serif" font-size="20" fill="#ff9ccc">LIVE</text>
+      <g fill="none" stroke="#ff9ccc" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M400 420L340 380L300 350L275 320L255 295"/>
+        <path d="M400 420L350 300L340 240L335 200L332 165"/>
+        <path d="M395 290L395 225L395 180L395 140"/>
+        <path d="M440 298L448 240L452 200L455 168"/>
+        <path d="M400 420L480 315L495 270L503 240L510 212"/>
+        <path d="M340 380L350 300L395 290L440 298L480 315"/>
+      </g>
+      <g fill="#ffffff" stroke="#ff6bb5" stroke-width="3">
+        <circle cx="400" cy="420" r="8"/><circle cx="340" cy="380" r="7"/><circle cx="300" cy="350" r="7"/><circle cx="275" cy="320" r="7"/><circle cx="255" cy="295" r="7"/>
+        <circle cx="350" cy="300" r="7"/><circle cx="340" cy="240" r="7"/><circle cx="335" cy="200" r="7"/>
+        <circle cx="395" cy="290" r="7"/><circle cx="395" cy="225" r="7"/><circle cx="395" cy="180" r="7"/><circle cx="395" cy="140" r="7"/>
+        <circle cx="440" cy="298" r="7"/><circle cx="448" cy="240" r="7"/><circle cx="452" cy="200" r="7"/><circle cx="455" cy="168" r="7"/>
+        <circle cx="480" cy="315" r="7"/><circle cx="495" cy="270" r="7"/><circle cx="503" cy="240" r="7"/><circle cx="510" cy="212" r="7"/>
+      </g>
+      <circle cx="332" cy="165" r="12" fill="#ff6bb5"/>
+      <path d="M344 158C430 110 520 100 590 118" fill="none" stroke="#ff6bb5" stroke-width="3" stroke-dasharray="8 10" stroke-linecap="round"/>
+      <path d="M600 104v54l13-13 10 23 10-4-10-23h19z" fill="#ffffff" stroke="#0d0d14" stroke-width="3" stroke-linejoin="round"/>
+    </svg>`),
+    descrizione: "Muovi il cursore del computer con le mani: la webcam guarda i tuoi gesti e il puntatore li segue.",
+    funzioni: [
+      "Controlla il cursore senza toccare il mouse",
+      "Riconosce la mano in tempo reale dalla webcam",
+      "Basta una normale webcam, niente sensori speciali",
+    ],
+    tecnologie: ["Webcam", "Visione artificiale", "Gesti"],
+    pulsanti: [{ testo: "Download", link: "https://drive.google.com/file/d/1GUf4QtWyxs43AInMS6YjsbznOcMpfRWM/view?usp=sharing", principale: true, nuovaScheda: true }],
   },
 ];
 
